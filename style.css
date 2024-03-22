@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url(images/RedHatDisplay-VariableFont_wght.ttf) format("truetype");
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+    --black: #000;
+
+    /* Font size */
+    --fs-160: 16px;
+
+    /* font weights */
+    --fw-500:  500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    /* font-family */
+    --ff-display: 'Red Hat Display';
+}
+.fs-160 {
+    font-size: 16px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}.fw-900 {
+    font-weight: 900;
+}
+.bg-color {
+    background: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-bg {
+    background: var(--white);
+}
+.pale-bg {
+    background: var(--Very-pale-blue);
+}
+.btn-bg-one {
+    color: var(--white);
+    background: var(--Bright-blue);
+}
+.btn-bg-one:hover,
+.btn-bg-one:focus {
+    opacity: 0.7;
+}
+.btn-bg-two {
+    color: var(--Desaturated-blue);
+    background: transparent;
+}
+.btn-bg-two:hover,
+.btn-bg-two:focus {
+    color: var(--black);
+}
+.text-color {
+    color: var(--Desaturated-blue);
+}
+.text-black {
+    color: var(--black);
+}
+.text-white {
+    color: var(--white);
+}
+.text-blue {
+    color: var(--Dark-blue);
+}
+.ff-dislay {
+    font-family: var(--ff-display);
+}
+.capitalize {
+    text-transform: capitalize;
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.flex {
+    display: flex;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, p {
+    font-weight: 500;
+}
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    flex-direction: column;
+    width: 80%;
+    border-radius: 20px;
+    max-width: 375px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px var(--Pale-blue);
+}
+.preview {
+    padding: 2rem;
+}
+h2 {
+    padding-bottom: 1rem;
+}
+.plan {
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-size: .9rem;
+    align-items: center;
+}
+.price {
+    flex-direction: column;
+}
+.annual-plan {
+    gap: 1.3rem;
+    align-items: center;
+}
+.plan a {
+    color: var(--Bright-blue);
+    font-weight: var(--fw-700);
+    cursor: pointer;
+}
+.plan a:hover,
+.plan a:focus {
+    opacity: 0.7;
+}
+.btn {
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+
+@media (min-width: 35rem) {
+    body {
+        background: url("images/pattern-background-desktop.svg");
+    }
+}
